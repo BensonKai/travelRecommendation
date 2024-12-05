@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benson Travels</title>
+    <link rel="stylesheet" href="travel_recommendation.css">
+    <style>
+        nav .search-bar {
+            display: flex;
+            gap: 5px;
+        }
+        nav input[type="text"] {
+            padding: 5px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        nav button {
+            padding: 6px 12px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        nav button.search-btn {
+            background-color: #007bff;
+            color: white;
+        }
+        nav button.reset-btn {
+            background-color: #f44336;
+            color: white;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: black;
+        }
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            color: black;
+            margin-top: 200px;
+            margin-bottom: 20px;
+            margin-left: 200px;
+        }
+        .intro {
+            font-size: 18px;
+            color: black;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 200px;
+            word-wrap: break-word;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">🌍 Benson Travels</div>
+        <div class="links">
+            <a href="travel_recommendation.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for recommendations">
+            <button class="search-btn">Search</button>
+            <button class="reset-btn" onclick="resetSearch()">Reset</button>
+        </div>
+    </nav>
+    <div class="title">FIND YOUR NEXT DREAM DESTINATION</div>
+    <div class="intro">Ready to embark on the journey of a lifetime? Whether you're a seasoned globetrotter or planning your first big adventure, we've got you covered. Dive into our treasure trove of travel guides, insider tips, and breathtaking destinations. Pack your bags, grab your passport, and let's explore the world together!</div>
+    <script>
+        // Function to reset the search bar
+        function resetSearch() {
+            document.querySelector('input[type="text"]').value = '';
+        }
+    </script>
+</body>
+</html>
